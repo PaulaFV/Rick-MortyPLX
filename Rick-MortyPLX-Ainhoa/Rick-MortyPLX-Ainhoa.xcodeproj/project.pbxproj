@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		560874172DDB1CA5003D27EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560874162DDB1CA5003D27EE /* AppDelegate.swift */; };
+		560874192DDB1CA5003D27EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560874182DDB1CA5003D27EE /* SceneDelegate.swift */; };
+		5608741B2DDB1CA5003D27EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608741A2DDB1CA5003D27EE /* ViewController.swift */; };
+		5608741E2DDB1CA5003D27EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5608741C2DDB1CA5003D27EE /* Main.storyboard */; };
+		560874202DDB1CA6003D27EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5608741F2DDB1CA6003D27EE /* Assets.xcassets */; };
+		560874232DDB1CA6003D27EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560874212DDB1CA6003D27EE /* LaunchScreen.storyboard */; };
+		5608742C2DDB1E74003D27EE /* OrigenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608742B2DDB1E74003D27EE /* OrigenModel.swift */; };
+		5608742E2DDB1FD1003D27EE /* ModelPersonaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608742D2DDB1FD1003D27EE /* ModelPersonaje.swift */; };
+		56A399E12DDC6FC90045CFE2 /* ProtocoloAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A399E02DDC6FC90045CFE2 /* ProtocoloAPI.swift */; };
+		56A399E32DDC6FF60045CFE2 /* ResultadoPersonaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A399E22DDC6FF60045CFE2 /* ResultadoPersonaje.swift */; };
+		56A399E52DDC701B0045CFE2 /* ServicioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A399E42DDC701A0045CFE2 /* ServicioAPI.swift */; };
+		56A399E82DDC70950045CFE2 /* LocalizaciónModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A399E72DDC70950045CFE2 /* LocalizaciónModel.swift */; };
+		56A399EA2DDC71850045CFE2 /* ListaPersonajesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A399E92DDC71840045CFE2 /* ListaPersonajesViewModel.swift */; };
+		56A399EE2DDC71C70045CFE2 /* ProtocoloViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A399ED2DDC71C70045CFE2 /* ProtocoloViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		560874132DDB1CA5003D27EE /* Rick-MortyPLX-Ainhoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick-MortyPLX-Ainhoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		560874162DDB1CA5003D27EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		560874182DDB1CA5003D27EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5608741A2DDB1CA5003D27EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5608741D2DDB1CA5003D27EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5608741F2DDB1CA6003D27EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		560874222DDB1CA6003D27EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		560874242DDB1CA6003D27EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5608742B2DDB1E74003D27EE /* OrigenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrigenModel.swift; sourceTree = "<group>"; };
+		5608742D2DDB1FD1003D27EE /* ModelPersonaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPersonaje.swift; sourceTree = "<group>"; };
+		56A399E02DDC6FC90045CFE2 /* ProtocoloAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocoloAPI.swift; sourceTree = "<group>"; };
+		56A399E22DDC6FF60045CFE2 /* ResultadoPersonaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoPersonaje.swift; sourceTree = "<group>"; };
+		56A399E42DDC701A0045CFE2 /* ServicioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicioAPI.swift; sourceTree = "<group>"; };
+		56A399E72DDC70950045CFE2 /* LocalizaciónModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizaciónModel.swift"; sourceTree = "<group>"; };
+		56A399E92DDC71840045CFE2 /* ListaPersonajesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPersonajesViewModel.swift; sourceTree = "<group>"; };
+		56A399ED2DDC71C70045CFE2 /* ProtocoloViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocoloViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		560874102DDB1CA5003D27EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5608740A2DDB1CA5003D27EE = {
+			isa = PBXGroup;
+			children = (
+				560874152DDB1CA5003D27EE /* Rick-MortyPLX-Ainhoa */,
+				560874142DDB1CA5003D27EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		560874142DDB1CA5003D27EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				560874132DDB1CA5003D27EE /* Rick-MortyPLX-Ainhoa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		560874152DDB1CA5003D27EE /* Rick-MortyPLX-Ainhoa */ = {
+			isa = PBXGroup;
+			children = (
+				56A399DF2DDC63CA0045CFE2 /* ViewModel */,
+				56A399DE2DDC63B20045CFE2 /* View */,
+				5608742A2DDB1E22003D27EE /* Model */,
+				560874162DDB1CA5003D27EE /* AppDelegate.swift */,
+				560874182DDB1CA5003D27EE /* SceneDelegate.swift */,
+				5608741C2DDB1CA5003D27EE /* Main.storyboard */,
+				5608741F2DDB1CA6003D27EE /* Assets.xcassets */,
+				560874212DDB1CA6003D27EE /* LaunchScreen.storyboard */,
+				560874242DDB1CA6003D27EE /* Info.plist */,
+			);
+			path = "Rick-MortyPLX-Ainhoa";
+			sourceTree = "<group>";
+		};
+		5608742A2DDB1E22003D27EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56A399E62DDC702E0045CFE2 /* ComunicacionAPI */,
+				5608742B2DDB1E74003D27EE /* OrigenModel.swift */,
+				5608742D2DDB1FD1003D27EE /* ModelPersonaje.swift */,
+				56A399E72DDC70950045CFE2 /* LocalizaciónModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56A399DE2DDC63B20045CFE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5608741A2DDB1CA5003D27EE /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56A399DF2DDC63CA0045CFE2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56A399E92DDC71840045CFE2 /* ListaPersonajesViewModel.swift */,
+				56A399ED2DDC71C70045CFE2 /* ProtocoloViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56A399E62DDC702E0045CFE2 /* ComunicacionAPI */ = {
+			isa = PBXGroup;
+			children = (
+				56A399E42DDC701A0045CFE2 /* ServicioAPI.swift */,
+				56A399E22DDC6FF60045CFE2 /* ResultadoPersonaje.swift */,
+				56A399E02DDC6FC90045CFE2 /* ProtocoloAPI.swift */,
+			);
+			path = ComunicacionAPI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		560874122DDB1CA5003D27EE /* Rick-MortyPLX-Ainhoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560874272DDB1CA6003D27EE /* Build configuration list for PBXNativeTarget "Rick-MortyPLX-Ainhoa" */;
+			buildPhases = (
+				5608740F2DDB1CA5003D27EE /* Sources */,
+				560874102DDB1CA5003D27EE /* Frameworks */,
+				560874112DDB1CA5003D27EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rick-MortyPLX-Ainhoa";
+			productName = "Rick-MortyPLX-Ainhoa";
+			productReference = 560874132DDB1CA5003D27EE /* Rick-MortyPLX-Ainhoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5608740B2DDB1CA5003D27EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					560874122DDB1CA5003D27EE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5608740E2DDB1CA5003D27EE /* Build configuration list for PBXProject "Rick-MortyPLX-Ainhoa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5608740A2DDB1CA5003D27EE;
+			productRefGroup = 560874142DDB1CA5003D27EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				560874122DDB1CA5003D27EE /* Rick-MortyPLX-Ainhoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		560874112DDB1CA5003D27EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560874232DDB1CA6003D27EE /* LaunchScreen.storyboard in Resources */,
+				560874202DDB1CA6003D27EE /* Assets.xcassets in Resources */,
+				5608741E2DDB1CA5003D27EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5608740F2DDB1CA5003D27EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5608742E2DDB1FD1003D27EE /* ModelPersonaje.swift in Sources */,
+				5608741B2DDB1CA5003D27EE /* ViewController.swift in Sources */,
+				56A399E82DDC70950045CFE2 /* LocalizaciónModel.swift in Sources */,
+				56A399E12DDC6FC90045CFE2 /* ProtocoloAPI.swift in Sources */,
+				5608742C2DDB1E74003D27EE /* OrigenModel.swift in Sources */,
+				56A399E32DDC6FF60045CFE2 /* ResultadoPersonaje.swift in Sources */,
+				56A399EA2DDC71850045CFE2 /* ListaPersonajesViewModel.swift in Sources */,
+				56A399EE2DDC71C70045CFE2 /* ProtocoloViewModel.swift in Sources */,
+				560874172DDB1CA5003D27EE /* AppDelegate.swift in Sources */,
+				56A399E52DDC701B0045CFE2 /* ServicioAPI.swift in Sources */,
+				560874192DDB1CA5003D27EE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5608741C2DDB1CA5003D27EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5608741D2DDB1CA5003D27EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		560874212DDB1CA6003D27EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				560874222DDB1CA6003D27EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		560874252DDB1CA6003D27EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		560874262DDB1CA6003D27EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		560874282DDB1CA6003D27EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rick-MortyPLX-Ainhoa/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Plexustech.Rick-MortyPLX-Ainhoa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		560874292DDB1CA6003D27EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rick-MortyPLX-Ainhoa/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Plexustech.Rick-MortyPLX-Ainhoa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5608740E2DDB1CA5003D27EE /* Build configuration list for PBXProject "Rick-MortyPLX-Ainhoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560874252DDB1CA6003D27EE /* Debug */,
+				560874262DDB1CA6003D27EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560874272DDB1CA6003D27EE /* Build configuration list for PBXNativeTarget "Rick-MortyPLX-Ainhoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560874282DDB1CA6003D27EE /* Debug */,
+				560874292DDB1CA6003D27EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5608740B2DDB1CA5003D27EE /* Project object */;
+}
