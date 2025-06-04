@@ -10,5 +10,4 @@ import UIKit
 
 protocol ConfigureUseCaseProtocol {
     func recieveImage(url: String, completion: @escaping (UIImage?) -> Void)
-    func makeCellViewModel(from character: Character) -> CharactersCellViewModel
 }

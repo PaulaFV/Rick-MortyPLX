@@ -34,8 +34,4 @@ class ConfigureUseCase: ConfigureUseCaseProtocol {
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
-
-    func makeCellViewModel(from character: Character) -> CharactersCellViewModel {
-        return CharactersCellViewModel(character: character, configureUseCase: self)
-    }
 }

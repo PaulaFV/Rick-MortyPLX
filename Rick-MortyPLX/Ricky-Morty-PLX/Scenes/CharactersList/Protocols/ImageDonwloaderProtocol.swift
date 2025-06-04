@@ -15,11 +15,9 @@ protocol ImageDownloaderProtocol {
 
 class ImageDownloader: ImageDownloaderProtocol {
     func downloadImage(from url: String) -> AnyPublisher<UIImage?, Never> {
-        print("Descargando imagen desde URL:", url)
         guard let url = URL(string: url) else {
             return Just(nil).eraseToAnyPublisher()
         }
-        
         return URLSession.shared.dataTaskPublisher(for: url)
             .map { data, response -> UIImage? in
                 guard let httpResponse = response as? HTTPURLResponse,

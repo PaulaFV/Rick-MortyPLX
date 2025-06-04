@@ -8,9 +8,8 @@
 import Foundation
 import UIKit
 
-class CharacterDetailView: UIViewController{
-    
-    private let character: Character
+class CharacterDetailView: UIViewController {
+    private let viewModel: CharacterDetailViewModel
     private let imageView = UIImageView()
     private let statusLabel = UILabel()
     private let speciesLabel = UILabel()
@@ -19,20 +18,21 @@ class CharacterDetailView: UIViewController{
     private let locationLabel = UILabel()
     
     init(character: Character) {
-        self.character = character
+        self.viewModel = CharacterDetailViewModel(character: character)
         super.init(nibName: nil, bundle: nil)
     }
     
     required init(coder: NSCoder) {
-        fatalError("init(coder: ) has not been implemented")
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = character.name
+        title = viewModel.character.name
         view.backgroundColor = .darkGray
         setupUI()
-        loadImage()
+        bindViewModel()
+        viewModel.loadImage()
     }
     
     private func setUpLabel(label: UILabel, text: String) {
@@ -43,20 +43,17 @@ class CharacterDetailView: UIViewController{
         label.text = text
     }
     
-    //Configure the view
-    
     private func setupUI() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 12
         imageView.clipsToBounds = true
         
-        setUpLabel(label: statusLabel, text: "Status: \(character.status)")
-        setUpLabel(label: speciesLabel, text: "Species: \(character.species)")
-        setUpLabel(label: genderLabel, text: "Gender: \(character.gender)")
-        setUpLabel(label: originLabel, text: "Origin: \(character.origin.name)")
-        setUpLabel(label: locationLabel, text: "Location: \(character.location.name)")
-        
+        setUpLabel(label: statusLabel, text: "Status: \(viewModel.character.status)")
+        setUpLabel(label: speciesLabel, text: "Species: \(viewModel.character.species)")
+        setUpLabel(label: genderLabel, text: "Gender: \(viewModel.character.gender)")
+        setUpLabel(label: originLabel, text: "Origin: \(viewModel.character.origin.name)")
+        setUpLabel(label: locationLabel, text: "Location: \(viewModel.character.location.name)")
         
         view.addSubview(imageView)
         view.addSubview(statusLabel)
@@ -64,7 +61,6 @@ class CharacterDetailView: UIViewController{
         view.addSubview(genderLabel)
         view.addSubview(originLabel)
         view.addSubview(locationLabel)
-        
         
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo : view.safeAreaLayoutGuide.topAnchor , constant: 20),
@@ -94,16 +90,9 @@ class CharacterDetailView: UIViewController{
         ])
     }
     
-    //Loading the characters image
-    private func loadImage() {
-        guard let url = URL(string: character.image) else { return }
-        
-        URLSession.shared.dataTask(with: url) { data , _ , _ in
-            if let data = data {
-                DispatchQueue.main.async {
-                    self.imageView.image = UIImage(data: data)
-                }
-            }
-        }.resume()
+    private func bindViewModel() {
+        viewModel.onImageLoaded = { [weak self] image in
+            self?.imageView.image = image
+        }
     }
 }

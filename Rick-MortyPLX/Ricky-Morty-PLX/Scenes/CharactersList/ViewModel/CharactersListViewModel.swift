@@ -8,7 +8,8 @@
 import Foundation
 import Combine
 
-class CharactersListViewModel: ObservableObject {
+class CharactersListViewModel: ObservableObject, CharactersListViewModelProtocol {
+    
     @Published var characters: [Character] = []
     private var cancellables = Set<AnyCancellable>()
     private let apiService: ApiServiceProtocol

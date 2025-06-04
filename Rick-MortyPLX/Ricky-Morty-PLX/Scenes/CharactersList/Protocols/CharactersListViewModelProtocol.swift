@@ -7,8 +7,7 @@
 
 import Foundation
 
-protocol charactersListViewModelProtocol {
+protocol CharactersListViewModelProtocol {
     func loadCharacters()
-    func characterCellViewModel(index: Int) -> Character?
-    func selectedCharacter(index: Int)
+    func characterCellViewModel(at index: Int) -> CharactersCellViewModel?
 }
