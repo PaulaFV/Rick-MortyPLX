@@ -10,11 +10,9 @@ import Foundation
 import Combine
 
 class ConfigureUseCase: ConfigureUseCaseProtocol {
-
     private let apiService: ApiServiceProtocol
     private let imageDownloader: ImageDownloaderProtocol
     private var subscriptions = Set<AnyCancellable>()
-
 
     init(apiService: ApiServiceProtocol, imageDownloader: ImageDownloaderProtocol) {
         self.apiService = apiService
@@ -35,9 +33,5 @@ class ConfigureUseCase: ConfigureUseCaseProtocol {
             .replaceError(with: nil)
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
-    }
-
-    func makeCellViewModel(from character: Character) -> CharactersCellViewModel {
-        return CharactersCellViewModel(character: character, configureUseCase: self)
     }
 }

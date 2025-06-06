@@ -18,6 +18,4 @@ class LoadCharactersUseCase: LoadCharactersUseCaseProtocol {
     func execute(url: String?) -> AnyPublisher<CharacterResultModel, any Error> {
         return apiService.recieveCharacters(url: url)
     }
-    
-    
 }
