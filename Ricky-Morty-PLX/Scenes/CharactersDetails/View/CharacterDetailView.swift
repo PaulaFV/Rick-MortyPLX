@@ -109,7 +109,7 @@ class CharacterDetailView: UIViewController {
     }
     
     private func updateFavouriteButton() {
-        let title = viewModel.isFavourite() ? "Quit Favourite" : " Add Favourite"
+        let title = viewModel.isFavourite() ? "💔" : "❤️"
         favouriteButton.setTitle(title, for: .normal)
     }
     
