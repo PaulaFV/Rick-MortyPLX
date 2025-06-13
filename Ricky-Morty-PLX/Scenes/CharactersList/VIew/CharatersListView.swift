@@ -13,6 +13,7 @@ class CharactersListView: UIViewController, UICollectionViewDelegate, UICollecti
     private var collectionView: UICollectionView!
     private var cancellables = Set<AnyCancellable>()
     private let configureUseCase: ConfigureUseCaseProtocol
+    private var selectedImageData: Data?
     
     init(viewModel: CharactersListViewModel, configureUseCase: ConfigureUseCaseProtocol) {
         self.viewModel = viewModel
@@ -29,6 +30,7 @@ class CharactersListView: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewDidLoad()
         title = "Rick & Morty Characters"
         view.backgroundColor = .darkGray
+        setupCreateButton()
         configureCollectionView()
         bindViewModel()
         viewModel.loadCharacters()
@@ -92,5 +94,56 @@ class CharactersListView: UIViewController, UICollectionViewDelegate, UICollecti
     private func navigateToDetail(character: Character) {
         let detailVC = CharacterDetailView(character: character)
         navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    //Create a custom character funcs
+    private func setupCreateButton() {
+        let createButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapCreateCharacter))
+        navigationItem.rightBarButtonItem = createButton
+    }
+    
+    @objc private func didTapCreateCharacter() {
+        showCharacterCreationAlert()
+    }
+    
+    private func showCharacterCreationAlert() {
+        let alert = UIAlertController(title: "New character", message: "Input data", preferredStyle: .alert)
+        
+        alert.addTextField { $0.placeholder = "Name" }
+        alert.addTextField { $0.placeholder = "Species" }
+        alert.addTextField { $0.placeholder = "Gender" }
+        alert.addTextField { $0.placeholder = "Status" }
+        alert.addTextField { $0.placeholder = "Image URL" }
+        alert.addTextField { $0.placeholder = "Origin" }
+        alert.addTextField { $0.placeholder = "Location" }
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default) { _ in
+            guard
+                let name = alert.textFields?[0].text,
+                let species = alert.textFields?[1].text,
+                let gender = alert.textFields?[2].text,
+                let status = alert.textFields?[3].text,
+                let image = alert.textFields?[4].text,
+                let origin = alert.textFields?[5].text,
+                let location = alert.textFields?[6].text
+            else {
+                return
+            }
+            
+            self.viewModel.createCustomCharacter(
+                name: name,
+                species: species,
+                gender: gender,
+                status: status,
+                image: image,
+                originName: origin,
+                locationName: location
+            )
+        }
+        
+        alert.addAction(saveAction)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        present(alert, animated: true)
     }
 }

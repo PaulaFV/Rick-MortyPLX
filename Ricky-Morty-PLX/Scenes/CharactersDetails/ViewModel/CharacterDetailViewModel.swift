@@ -45,4 +45,5 @@ class CharacterDetailViewModel {
     func toggleFavourite() {
         characterFavouriteManager.toggleFavourite(character: character)
     }
+
 }

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0C91FE2DFC1C7300515716 /* EntityCustomCharacter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C91FC2DFC1C7300515716 /* EntityCustomCharacter+CoreDataClass.swift */; };
+		0E0C91FF2DFC1C7300515716 /* EntityCustomCharacter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C91FD2DFC1C7300515716 /* EntityCustomCharacter+CoreDataProperties.swift */; };
+		0E0C92012DFC1FDF00515716 /* CustomCharacterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C92002DFC1FDF00515716 /* CustomCharacterManager.swift */; };
 		0E1467882DF0406C00B84733 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1467872DF0406C00B84733 /* CharacterDetailViewModel.swift */; };
+		0E30C0EF2DFC15EA00E6FFD1 /* CustomCharacterEntiti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E30C0ED2DFC15EA00E6FFD1 /* CustomCharacterEntiti.xcdatamodeld */; };
 		0E5A0E602DE99CA500C56326 /* ImageDonwloaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A0E5F2DE99CA500C56326 /* ImageDonwloaderProtocol.swift */; };
 		0E91EA6A2DE8B1DA00347D7A /* CharactersCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91EA692DE8B1DA00347D7A /* CharactersCellViewModel.swift */; };
 		0EC256FC2DE5CDBE007628F5 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC256FB2DE5CDBE007628F5 /* InfoModel.swift */; };
@@ -38,7 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E0C91FC2DFC1C7300515716 /* EntityCustomCharacter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityCustomCharacter+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0E0C91FD2DFC1C7300515716 /* EntityCustomCharacter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityCustomCharacter+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0E0C92002DFC1FDF00515716 /* CustomCharacterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCharacterManager.swift; sourceTree = "<group>"; };
 		0E1467872DF0406C00B84733 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		0E30C0EE2DFC15EA00E6FFD1 /* CustomCharacterEntiti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CustomCharacterEntiti.xcdatamodel; sourceTree = "<group>"; };
 		0E5A0E5F2DE99CA500C56326 /* ImageDonwloaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDonwloaderProtocol.swift; sourceTree = "<group>"; };
 		0E91EA692DE8B1DA00347D7A /* CharactersCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCellViewModel.swift; sourceTree = "<group>"; };
 		0EC256FB2DE5CDBE007628F5 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
@@ -199,6 +207,7 @@
 				5619C9472DF06851003DA70B /* CharacterFavourite.xcdatamodeld */,
 				56411E0E2DE4551F0032BD60 /* Assets.xcassets */,
 				56411E132DE4551F0032BD60 /* Info.plist */,
+				0E30C0ED2DFC15EA00E6FFD1 /* CustomCharacterEntiti.xcdatamodeld */,
 			);
 			path = "Ricky-Morty-PLX";
 			sourceTree = "<group>";
@@ -206,6 +215,8 @@
 		56411E202DE456700032BD60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0E0C91FC2DFC1C7300515716 /* EntityCustomCharacter+CoreDataClass.swift */,
+				0E0C91FD2DFC1C7300515716 /* EntityCustomCharacter+CoreDataProperties.swift */,
 				5619C94A2DF069E1003DA70B /* CharacterFavourite+CoreDataClass.swift */,
 				5619C94B2DF069E1003DA70B /* CharacterFavourite+CoreDataProperties.swift */,
 				56411E272DE456E20032BD60 /* APICommunication */,
@@ -216,6 +227,7 @@
 				0EC256FB2DE5CDBE007628F5 /* InfoModel.swift */,
 				0EC256FD2DE5CDD6007628F5 /* PaginationModel.swift */,
 				5692B9C22DF2FA3100FD463C /* CharacterFavouriteManager.swift */,
+				0E0C92002DFC1FDF00515716 /* CustomCharacterManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,7 +313,9 @@
 				0EC257082DE5DAF1007628F5 /* ConfigureUseCaseProtocol.swift in Sources */,
 				5619C9492DF06851003DA70B /* CharacterFavourite.xcdatamodeld in Sources */,
 				0E91EA6A2DE8B1DA00347D7A /* CharactersCellViewModel.swift in Sources */,
+				0E0C92012DFC1FDF00515716 /* CustomCharacterManager.swift in Sources */,
 				56411E342DE458E00032BD60 /* CharacterDetailView.swift in Sources */,
+				0E30C0EF2DFC15EA00E6FFD1 /* CustomCharacterEntiti.xcdatamodeld in Sources */,
 				56411E262DE456CB0032BD60 /* OriginModel.swift in Sources */,
 				0E5A0E602DE99CA500C56326 /* ImageDonwloaderProtocol.swift in Sources */,
 				56411E242DE456B50032BD60 /* LocationModel.swift in Sources */,
@@ -324,6 +338,8 @@
 				0E1467882DF0406C00B84733 /* CharacterDetailViewModel.swift in Sources */,
 				0EC256FC2DE5CDBE007628F5 /* InfoModel.swift in Sources */,
 				0EC257022DE5D90B007628F5 /* LoadCharactersUseCaseProtocol.swift in Sources */,
+				0E0C91FE2DFC1C7300515716 /* EntityCustomCharacter+CoreDataClass.swift in Sources */,
+				0E0C91FF2DFC1C7300515716 /* EntityCustomCharacter+CoreDataProperties.swift in Sources */,
 				5692B9C32DF2FA3100FD463C /* CharacterFavouriteManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +539,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		0E30C0ED2DFC15EA00E6FFD1 /* CustomCharacterEntiti.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0E30C0EE2DFC15EA00E6FFD1 /* CustomCharacterEntiti.xcdatamodel */,
+			);
+			currentVersion = 0E30C0EE2DFC15EA00E6FFD1 /* CustomCharacterEntiti.xcdatamodel */;
+			path = CustomCharacterEntiti.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		5619C9472DF06851003DA70B /* CharacterFavourite.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
